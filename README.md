@@ -23,6 +23,6 @@ build, and observe the release appearing on PyPI.
 
 ## License
 
-Copyright 2021–2025 Viktor Eikman
+Copyright 2021–2026 Viktor Eikman
 
 `punwrap` is licensed as detailed in the accompanying file LICENSE.
