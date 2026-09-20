@@ -6,6 +6,14 @@ version 0.1.0.
 ## [Unreleased]
 Nothing yet.
 
+## [0.3.1] – 2026-09-20
+
+### Added
+- Local and server-side builds for Python v3.13.
+
+### Removed
+- Local and server-side builds for Python v3.9.
+
 ## [0.3.0] – 2025-03-08
 
 ### Changed
