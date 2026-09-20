@@ -6,6 +6,11 @@ version 0.1.0.
 ## [Unreleased]
 Nothing yet.
 
+## [0.3.3] – 2026-09-20
+
+No efficacious changes to package behaviour. Upgraded GitHub-workflow actions
+only.
+
 ## [0.3.2] – 2026-09-20
 
 ### Added
