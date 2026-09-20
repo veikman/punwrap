@@ -122,6 +122,23 @@ jobs:
     permissions:
       id-token: write
     steps:
+      - uses: actions/checkout@v7
+      - name: Check release tag matches package version
+        run: |
+          python - <<'PY'
+          import os
+          import tomllib
+
+          expected = os.environ['GITHUB_REF_NAME'].removeprefix('v')
+          with open('Cargo.toml', 'rb') as cargo_toml:
+              actual = tomllib.load(cargo_toml)['package']['version']
+
+          if actual != expected:
+              raise SystemExit(
+                  f'Release tag v{expected} does not match Cargo.toml '
+                  f'version {actual}.'
+              )
+          PY
       - uses: actions/download-artifact@v7
         with:
           pattern: wheels-*
