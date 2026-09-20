@@ -10,11 +10,11 @@ For an example of higher-level utilities built on `punwrap`, see
 Binary builds are automated through GitHub. To add support for a new version of
 Python, or remove support, edit:
 
-* `.github/workflows/build.yml` — Defines central build environment and
-  outputs.
-* `pyproject.toml` — Defines trove classifiers and requirements for the Python
-  project, which will appear on PyPI.
-* `tasks.py` — `PYTHON_INTERPRETER_VERSIONS` governs local builds only.
+| File | Relevance |
+| ---- | --------- |
+| `.github/workflows/build.yml` | The central build environment and its outputs. |
+| `pyproject.toml` | Trove classifiers and requirements for the Python project, which will appear on PyPI. |
+| `tasks.py` | `PYTHON_INTERPRETER_VERSIONS` governs local builds only. |
 
 For all release-relevant changes, update `CHANGELOG.md` and the copyright
 notice in this file. Commit it all, push to GitHub, and observe the build
