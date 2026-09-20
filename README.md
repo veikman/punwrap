@@ -16,10 +16,17 @@ Python, or remove support, edit:
 | `pyproject.toml` | Trove classifiers and requirements for the Python project, which will appear on PyPI. |
 | `tasks.py` | `PYTHON_INTERPRETER_VERSIONS` governs local builds only. |
 
-For all release-relevant changes, update `CHANGELOG.md` and the copyright
-notice in this file. Commit it all, push to GitHub, and observe the build
-actions there. For a release, apply a Git tag, push the tag, observe the new
-build, and observe the release appearing on PyPI.
+For this and other release-relevant changes, add notes to `CHANGELOG.md`.
+
+| File | Action |
+| ---- | ------ |
+| `CHANGELOG.md` | Finalize release notes. |
+| `README.md` | Update copyright statement. |
+| `Cargo.toml` | Update version ID. |
+
+Commit it all, push to GitHub, and observe the build actions there. For a
+release, apply a Git tag, push the tag, observe the new build, and observe the
+release appearing on PyPI.
 
 ## License
 
